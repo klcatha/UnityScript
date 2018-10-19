@@ -6,9 +6,9 @@ public class Test : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		string name;
-		name = "kitamura";
-		Debug.Log(name);
+		int answer;
+		answer = 1 + 2;
+		Debug.Log(answer);
 	}
 	
 	// Update is called once per frame
