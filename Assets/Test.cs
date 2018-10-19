@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Test : MonoBehaviour {
 
+	void SayHello()	{
+		Debug.Log("Hello");
+	}
+
 	// Use this for initialization
 	void Start () {
-		int answer;
-		answer = 1 + 2;
-		Debug.Log(answer);
+		SayHello();
 	}
 	
 	// Update is called once per frame
