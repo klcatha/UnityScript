@@ -6,8 +6,9 @@ public class Test : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//Hello, Worldをコンソールウィンドウに表示する
-		Debug.Log("Hello, World");		
+		int age;
+		age = 30;
+		Debug.Log(age);
 	}
 	
 	// Update is called once per frame
