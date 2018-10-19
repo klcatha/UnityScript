@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Test : MonoBehaviour {
 
-	void SayHello()	{
-		Debug.Log("Hello");
+	void callName(string name)	{
+		Debug.Log("Hello" + name);
 	}
-
 	// Use this for initialization
 	void Start () {
-		SayHello();
+		callName("kengo");
 	}
 	
 	// Update is called once per frame
