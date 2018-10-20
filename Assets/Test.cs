@@ -2,14 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class Player
+{
+
+	private int hp = 100;
+	private int power = 50;
+
+	public void Attack() {
+		Debug.Log(this.power + "のダメージを与えた");
+	}
+
+	public void Damage(int Damage)
+	{
+		this.hp -= Damage;
+		Debug.Log(Damage + "のダメージを受けた");
+	}
+}
+
 public class Test : MonoBehaviour {
 
-	void callName(string name)	{
-		Debug.Log("Hello" + name);
-	}
 	// Use this for initialization
 	void Start () {
-		callName("kengo");
+		Player myPlayer = new Player();
+		myPlayer.Attack();
+		myPlayer.Damage(30);
 	}
 	
 	// Update is called once per frame
