@@ -23,9 +23,10 @@ public class Test : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Player myPlayer = new Player();
-		myPlayer.Attack();
-		myPlayer.Damage(30);
+		Vector2 playerPos = new Vector2(3.0f, 4.0f);
+		playerPos.x += 8.0f;
+		playerPos.y += 5.0f;
+		Debug.Log(playerPos);
 	}
 	
 	// Update is called once per frame
